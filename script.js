@@ -3,5 +3,10 @@ let count=0;
 document.getElementById("increment-counter").addEventListener("click",function(){
 	alert(count);
 	count++;
-	document.getElementById("counter");
+
+});
+const counter = document.getElementById("counter");
+
+document.getElementById("incrementBtn").addEventListener("click", function () {
+    counter.textContent = Number(counter.textContent) + 1;
 });
